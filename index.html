@@ -1,19 +1,22 @@
+<!--arquivo index.html-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body id="home">
     <header> 
         <div class="container">
             <nav>
-                <div class="logo">Blog-Luís</div>
+                <div class="logo">Blog-Luís-David</div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#postar">Poste-Algo</a></li>
+                    <li><a href="#preview">Visualizar</a></li>
                     <li><a href="#equipe">Desenvolvedor</a></li>
                 </ul>
             </nav>
@@ -22,35 +25,54 @@
     <main>
         <section class="banner">
             <h1>Veja o meu blog e divirta-se</h1>
-            <p>escreva a vontade e veja as principais noticias do dia a dia
-                principalmente com relação a tecnologia!</p>
-            <a href="#postar" class="btn">conhecer</a>
+            <p>Escreva à vontade e veja as principais notícias do dia a dia,
+                principalmente com relação à tecnologia!</p>
+            <a href="#postar" class="btn">Começar a postar</a>
         </section>
+        
         <section id="postar" class="container">
-            <h2>Poste-Algo</h2>
-            <div class="postarAlgo">
-                <div class="card-img card-img-1"></div>
-                <div class="card-content">
-                    <h3>Poste ou comente qualquer coisa</h3>
-                    <p>Este espaço é reservado para postar ou comentar
-                        qualquer coisa que desejar. 
-                    </p>
-                    <form action="comentario" method="post">
-                        <div>
-                            <label for="comentario">comente</label>
-                            <input type="text" id="postar"/>
-                            <div class="button">
-                            <button type="submit"> Enviar sua mensagem </button>
-                        </div>
-                    </form>
+            <h2>Crie seu post</h2>
+            <div class="post-form">
+                <form id="post-form">
+                    <div class="form-group">
+                        <label for="post-title">Título do Post</label>
+                        <input type="text" id="post-title" class="form-control" placeholder="Digite um título interessante" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-body">Conteúdo do Post</label>
+                        <textarea id="post-body" class="form-control" placeholder="Compartilhe suas ideias, notícias ou histórias..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Publicar Post</button>
+                </form>
+                <div class="loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="post-success">
+                    Post publicado com sucesso!
                 </div>
             </div>
         </section>
+        
+        <section id="preview" class="container">
+            <h2>Seu Post</h2>
+            <div class="post-preview">
+                <h3>Prévia do Post</h3>
+                <div class="post-preview-content">
+                    <h2 id="post-title-preview">Título do seu post aparecerá aqui</h2>
+                    <p id="post-body-preview">O conteúdo do seu post aparecerá aqui após a publicação.</p>
+                </div>
+            </div>
+        </section>
+        
         <section id="equipe" class="container">
-            <div class="equipe-item">
-                <div class="equipe-img"></div>
-                <h3>Luís David</h3>
-                <p>Especialista em T.I.</p>
+            <h2>Desenvolvedor</h2>
+            <div class="equipe">
+                <div class="equipe-item">
+                    <div class="equipe-img"></div>
+                    <h3>Luís David</h3>
+                    <p>Especialista em T.I.</p>
                 </div>
             </div>
         </section>
@@ -58,7 +80,7 @@
 
     <footer>
         <div class="container">
-            <p>Blog de tecnologia</p>
+            <p>&copy; 2025 - Blog de tecnologia</p>
         </div>
     </footer>
     <a href="#home" class="back-to-top">↑</a>
