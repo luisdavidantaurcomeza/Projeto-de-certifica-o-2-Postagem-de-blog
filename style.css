@@ -1,0 +1,68 @@
+/* Arquivo: style.css
+   Descrição: Estilos para o projeto de postagem de blog
+   Autor: Luís David
+   Data: 03/05/2025
+*/
+
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('/img/imagem\ de\ cinque\ terre\ italia.webp'); /* URL da imagem de fundo */
+}
+/* Estilos para o cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    background-image: url('/img/vilarejoEuropeu1.webp');
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin-left: 2rem;
+}
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+.nav-links a:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+}
+

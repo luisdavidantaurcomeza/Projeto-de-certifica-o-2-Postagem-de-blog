@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="home">
+    <header> 
+        <div class="container">
+            <nav>
+                <div class="logo">Blog-Luís</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#postar">Poste-Algo</a></li>
+                    <li><a href="#equipe">Desenvolvedor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Veja o meu blog e divirta-se</h1>
+            <p>escreva a vontade e veja as principais noticias do dia a dia
+                principalmente com relação a tecnologia!</p>
+            <a href="#home" class="btn">retornar</a>
+        </section>
+        <section id="postar" class="container">
+            <h2>Poste-Algo</h2>
+            <div class="postarAlgo">
+                <div class="card-img card-img-1"></div>
+                <div class="card-content">
+                    <h3>Poste ou comente qualquer coisa</h3>
+                    <p>Este espaço é reservado para postar ou comentar
+                        qualquer coisa que desejar. 
+                    </p>
+                    <form action="comentario" method="post">
+                        <div>
+                            <label for="comentario">comente</label>
+                            <input type="text" id="postar"/>
+                            <div class="button">
+                            <button type="submit"> Enviar sua mensagem </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="equipe" class="container">
+            <div class="equipe-item">
+                <div class="equipe-img"></div>
+                <h3>Luís David</h3>
+                <p>Especialista em T.I.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Blog de tecnologia</p>
+        </div>
+    </footer>
+    <a href="#home" class="back-to-top">↑</a>
+</body>
+</html>
